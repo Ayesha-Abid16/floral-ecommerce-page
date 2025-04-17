@@ -1,0 +1,102 @@
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    /* header section  */
+    header{
+        padding:2rem;
+    }
+    /* home section  */
+    section{
+        padding:2rem;
+    }
+    .home{
+        background-position: left;
+    }
+    .home .content{
+        padding-left: 5%;
+    }
+}
+@media (max-width: 786px) {
+    /* header section  */
+    .menu-icon {
+        display: block;
+    }
+
+    header nav{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0 ); */
+    }
+    header nav a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background-color: #fdeef4 ;
+        border: 1px solid rgba(0, 0, 0, 0.1) ;
+        display: block;
+        display: none;
+        /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0 ); */
+    }
+    /* header #menu-toggle:checked ~ nav{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    } */
+    header #menu-toggle:checked ~ nav a{
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    header #menu-toggle:checked ~ .menu-icon{
+        transform: rotate(90deg);
+        transition: transform 0.3s ease-in-out;
+    }
+    /* home section  */
+    .home .content h3{
+        font-size: 3rem;
+    }
+    .home .content span{
+        font-size: 2.5rem;
+    }
+    .home .content p{
+        font-size: 2rem;
+    }
+    /* about section  */
+    .about .main-part {
+        display: flex;
+        flex-direction: column;
+    }
+    .about .main-part .content{
+        padding-top: 4rem;
+    }
+     /* icon section  */
+    .icons-box .icons-container h3{
+        font-size: 2rem;
+    }
+    .icons-box .icons-container span{
+        font-size: 1.7rem;
+    }
+    .note-box h1{
+        font-size: 4rem;
+        margin-top: 50%;
+    }
+    .note-box h3{
+        font-size: 2rem;
+    }
+}
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    /* home section  */
+    .home .content h3{
+        font-size: 3rem;
+    }
+    /* about section  */
+    .heading{
+        font-size: 3rem;
+    }
+}
